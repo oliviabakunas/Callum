@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <p class="subtitle">Current time across different time zones</p>
+        
+        <div class="clocks-grid">
+            <!-- New York -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>New York</h2>
+                    <span class="timezone">(EST/EDT)</span>
+                </div>
+                <div class="clock-display" id="clock-ny">00:00:00</div>
+                <p class="date" id="date-ny"></p>
+            </div>
+
+            <!-- London -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>London</h2>
+                    <span class="timezone">(GMT/BST)</span>
+                </div>
+                <div class="clock-display" id="clock-london">00:00:00</div>
+                <p class="date" id="date-london"></p>
+            </div>
+
+            <!-- Paris -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Paris</h2>
+                    <span class="timezone">(CET/CEST)</span>
+                </div>
+                <div class="clock-display" id="clock-paris">00:00:00</div>
+                <p class="date" id="date-paris"></p>
+            </div>
+
+            <!-- Tokyo -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Tokyo</h2>
+                    <span class="timezone">(JST)</span>
+                </div>
+                <div class="clock-display" id="clock-tokyo">00:00:00</div>
+                <p class="date" id="date-tokyo"></p>
+            </div>
+
+            <!-- Sydney -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Sydney</h2>
+                    <span class="timezone">(AEDT/AEST)</span>
+                </div>
+                <div class="clock-display" id="clock-sydney">00:00:00</div>
+                <p class="date" id="date-sydney"></p>
+            </div>
+
+            <!-- Dubai -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Dubai</h2>
+                    <span class="timezone">(GST)</span>
+                </div>
+                <div class="clock-display" id="clock-dubai">00:00:00</div>
+                <p class="date" id="date-dubai"></p>
+            </div>
+
+            <!-- Singapore -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Singapore</h2>
+                    <span class="timezone">(SGT)</span>
+                </div>
+                <div class="clock-display" id="clock-singapore">00:00:00</div>
+                <p class="date" id="date-singapore"></p>
+            </div>
+
+            <!-- Los Angeles -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Los Angeles</h2>
+                    <span class="timezone">(PST/PDT)</span>
+                </div>
+                <div class="clock-display" id="clock-la">00:00:00</div>
+                <p class="date" id="date-la"></p>
+            </div>
+
+            <!-- Toronto -->
+            <div class="clock-card">
+                <div class="clock-header">
+                    <h2>Toronto</h2>
+                    <span class="timezone">(EST/EDT)</span>
+                </div>
+                <div class="clock-display" id="clock-toronto">00:00:00</div>
+                <p class="date" id="date-toronto"></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="add-timezone-btn">+ Add Time Zone</button>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
